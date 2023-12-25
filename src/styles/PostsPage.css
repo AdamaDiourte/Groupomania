@@ -1,0 +1,113 @@
+/* Styles de base pour mobile */
+.posts-container {
+    padding: 10px;
+}
+
+.profile-image {
+    width: 50px; /* Taille adaptée pour mobile */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.post h2 {
+    color: #333;
+    font-size: 18px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.post-reactions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.comments {
+    margin-top: 15px;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Styles pour tablette (min-width: 768px) */
+@media (min-width: 768px) {
+    .post {
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .post h2 {
+        font-size: 20px;
+    }
+
+    .post-reactions {
+        font-size: 16px;
+    }
+
+    .comments {
+        padding: 15px;
+    }
+
+    .comment {
+        padding: 10px;
+    }
+
+    .comment-image {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Styles pour grands écrans (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .posts-container {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .post h2 {
+        font-size: 22px;
+    }
+
+    .post-reactions {
+        font-size: 18px;
+    }
+
+    .comment-image {
+        width: 50px;
+        height: 50px;
+    }
+}

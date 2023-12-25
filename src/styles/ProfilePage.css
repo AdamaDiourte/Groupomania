@@ -1,0 +1,119 @@
+/* Styles de base pour mobile */
+.profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px 10px 20px;
+    padding: 10px 20px 10px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  
+  .profile-title {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .profile-info{
+    width: 100%;
+  }
+  
+  .profile-image-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image-container img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(18, 18, 17);
+    border-radius: 100%;
+    width: 500px;
+    height: 30vh;
+  }
+  
+  .profile-form {
+    width: 95%;
+  }
+  
+  .profile-form label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .profile-form input[type="text"],
+  .profile-form textarea,
+  .profile-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .profile-form button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #580733;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .profile-form button:hover {
+    background-color: #8e0d54;
+  }
+  
+  /* Styles pour tablette (min-width: 768px) */
+  @media (min-width: 768px) {
+    .profile-container {
+      margin: 20px auto;
+      max-width: 600px;
+    }
+  
+    .profile-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    
+    .profile-image-container {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 0;
+    }
+  
+    .profile-form {
+      width: 95%;
+    }
+  }
+  
+  /* Styles pour grands écrans (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .profile-container {
+      max-width: 800px;
+    }
+  
+    .profile-title {
+      font-size: 26px;
+    }
+  
+    .profile-form label {
+      font-size: 18px;
+    }
+  }
+  

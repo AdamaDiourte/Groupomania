@@ -1,0 +1,98 @@
+/* Styles de base pour mobile */
+.single-post-container {
+    max-width: 100%;
+    margin: 40px 10px 20px; /* Espacement en haut et sur les côtés pour les mobiles */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .single-post-container h1 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px; /* Espace après le titre */
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+  
+  .post-content {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+    margin-top: 15px;
+  }
+  
+  .post-reactions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .post-actions button {
+    padding: 10px 20px;
+    background-color: #580733; /* Couleur du bouton en état normal */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition pour un effet de hover doux */
+  }
+  
+  .post-actions button:hover {
+    background-color: #8e0d54; /* Couleur du bouton en état hover */
+  }
+  
+  /* Styles pour tablette (min-width: 768px) */
+  @media (min-width: 768px) {
+    .single-post-container {
+      max-width: 700px; /* Ajustement de la largeur maximale pour tablettes */
+      padding: 20px;
+      margin: 50px auto 30px; /* Espacement ajusté pour tablettes */
+    }
+  
+    .single-post-container h1 {
+      font-size: 22px; /* Taille de police légèrement plus grande pour tablettes */
+    }
+  
+    .post-content {
+      font-size: 15px; /* Taille de police ajustée pour tablettes */
+      line-height: 1.6;
+    }
+  
+    .post-reactions {
+      font-size: 13px; /* Taille de police ajustée pour tablettes */
+    }
+  }
+  
+  /* Styles pour grands écrans (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .single-post-container {
+      margin-top: 60px; /* Plus d'espace en haut pour les grands écrans */
+      margin-bottom: 30px; /* Ajout d'espacement en bas */
+    }
+  
+    .single-post-container h1 {
+      font-size: 24px; /* Taille de police plus grande pour grands écrans */
+    }
+  
+    .post-content {
+      font-size: 16px; /* Taille de police plus grande pour grands écrans */
+    }
+  
+    .post-reactions {
+      font-size: 14px; /* Taille de police ajustée pour grands écrans */
+    }
+  }
+  

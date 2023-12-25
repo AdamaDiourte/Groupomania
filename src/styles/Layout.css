@@ -1,0 +1,90 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #f4e8ed; /* Couleur de fond de la navbar */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  height: 60px; /* Taille de l'image agrandie */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacement accru entre les éléments */
+}
+
+/* Style du lien de création de post */
+.navbar-links a {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #367c39;
+}
+
+/* Style pour l'icône de profil */
+.navbar-profile-icon {
+  color: #580733;
+  font-size: 2rem; /* Taille de l'icône augmentée */
+  cursor: pointer;
+}
+
+.navbar-profile-icon:hover {
+  color: #8e0d54;
+}
+
+main {
+  flex: 1;
+  margin-top: 70px; /* Ajustement pour la hauteur accrue de la navbar */
+  padding-top: 10px;
+}
+
+.footer {
+  background-color: #f3dcdc;
+  text-align: center;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Styles pour tablette (min-width: 768px) */
+@media (min-width: 768px) {
+  .navbar-logo {
+    height: 80px;
+  }
+
+  main {
+    margin-top: 90px;
+  }
+}
+
+/* Styles pour grands écrans (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .navbar-logo {
+    height: 100px;
+  }
+
+  main {
+    margin-top: 110px;
+  }
+}

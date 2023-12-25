@@ -1,0 +1,31 @@
+/* HomePage.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Utiliser toute la hauteur de la vue */
+    text-align: center;
+    padding: 0 10px 0 10px;
+  }
+  
+  .home-buttons {
+    margin-top: 20px;
+  }
+  
+  .home-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #580733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .home-buttons button:hover {
+    background-color: #8e0d54;
+  }
+  
